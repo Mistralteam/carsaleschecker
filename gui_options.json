@@ -1,0 +1,80 @@
+{
+    "makes": [
+        "Audi",
+        "BMW",
+        "Ford",
+        "Toyota",
+        "Mazda",
+        "Mercedes-Benz",
+        "Mitsubishi",
+        "Nissan",
+        "Subaru",
+        "Volkswagen",
+        "Land Rover"
+    ],
+    "states": [
+        "new-south-wales",
+        "victoria",
+        "south-australia",
+        "western-australia"
+    ],
+    "models": {
+        "Audi": ["A3", "A4", "A5", "Q3", "Q5", "Q7"],
+        "BMW": ["2-Series", "3-Series", "4-Series", "5-Series", "X1", "X3", "X5", "X7"],
+        "Ford": ["Fiesta", "Focus", "Mustang", "Explorer", "Ranger"],
+        "Toyota": ["Camry", "Corolla", "Hilux", "Land Cruiser", "Rav4", "Prado"],
+        "Mazda": ["Mazda2", "Mazda3", "Mazda6", "CX-3", "CX-5", "CX-9"],
+        "Mercedes-Benz": ["A-Class", "B-Class", "C-Class", "E-Class", "GLA", "GLC", "GLE", "GLS"],
+        "Mitsubishi": ["Outlander", "Pajero", "Lancer", "Triton", "Eclipse Cross"],
+        "Nissan": ["Altima", "Sentra", "Titan", "Rogue", "Navara", "X-Trail", "Qashqai"],
+        "Subaru": ["Impreza", "Outback", "Forester", "Legacy", "BRZ", "Crosstrek"],
+        "Volkswagen": ["Golf", "Passat", "Tiguan", "Polo", "Jetta", "Arteon"],
+        "Land Rover": ["Discovery", "Defender", "Range Rover", "Range Rover Sport", "Range Rover Evoque", "Range Rover Velar"]
+    },
+    "badges": {
+        "Audi": {
+            "A3": ["Sportback", "Sedan"],
+            "A4": ["Premium", "Premium Plus", "Prestige", "s line sport plus"]
+        },
+        "BMW": {
+            "3-Series": ["320i", "330i", "M340i"],
+            "5-Series": ["530i", "540i", "M550i"]
+        },
+        "Ford": {
+            "Focus": ["SE", "ST", "Titanium"]
+        },
+        "Toyota": {
+            "Corolla": ["L", "LE", "XSE"]
+        },
+        "Mazda": {
+            "Mazda3": ["Sport", "Touring", "Grand Touring"],
+            "Mazda6": ["Sport", "Touring", "Grand Touring"]
+        },
+        "Mercedes-Benz": {
+            "C-Class": ["C200", "C250", "C300", "C63 AMG"],
+            "E-Class": ["E200", "E300", "E400", "E63 AMG"]
+        },
+        "Mitsubishi": {
+            "Outlander": ["ES", "SE", "SEL"],
+            "Pajero": ["GLX", "GLS"]
+        },
+        "Nissan": {
+            "Altima": ["S", "SV", "SL"],
+            "Sentra": ["S", "SV", "SR", "NISMO"]
+        },
+        "Subaru": {
+            "Impreza": ["2.0i", "2.0i Premium", "2.0i Sport", "2.0i Limited"],
+            "Outback": ["2.5i", "2.5i Premium", "2.5i Limited"]
+        },
+        "Volkswagen": {
+            "Golf": ["Trendline", "Comfortline", "Highline", "GTI", "R"]
+        },
+        "Land Rover": {
+            "Discovery": ["SE", "HSE"],
+            "Range Rover": ["HSE", "Autobiography", "SV"],
+            "Range Rover Sport": ["SE", "HSE", "SVR"],
+            "Range Rover Evoque": ["S", "SE", "HSE"],
+            "Range Rover Velar": ["S", "SE", "HSE", "R-Dynamic"]
+        }
+    }
+}
