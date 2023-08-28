@@ -4,6 +4,16 @@ import time
 import csv
 import tkinter as tk
 from tkinter import ttk, messagebox
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+
+def manual_selection():
+    global driver
+
+    # Using the Service object to start the chromedriver
+
+
 import sys, os
 import json
 
@@ -12,16 +22,16 @@ BASE_URL_TEMPLATE = f'{BASE_URL}/cars/{{make}}/{{model}}/{{badge}}-badge/{{state
 YEAR_RANGE_URL_TEMPLATE = f'{BASE_URL}/cars/?q=(And.(C.Make.{{make}}._.(C.Model.{{model}}._.Badge.{{badge}}.))_.State.{{state}}._.Year.range({{min_year}}..{{max_year}}).)'
 NUM_PAGES = 1  # Default value for number of pages to scrape
 
-
-
 def manual_selection():
     global driver
-    driver = webdriver.Chrome()
+
+    # Using the Service object to start the chromedriver
+    s = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=s)
+
     driver.get(BASE_URL)
     messagebox.showinfo("Info",
                         "Please select make, model, badge, etc., manually on the browser and then come back to the GUI and hit 'Scrape Now'. Do not close the browser.")
-
-
 def save_to_csv(data, filename):
     keys = data[0].keys()
     with open(filename, 'w', newline='', encoding='utf-8') as csv_file:
