@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Data Scraper Tool for Carsales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .download-button, .coffee-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .download-button {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+
+        .coffee-button {
+            background-color: #FF813F;
+            color: #ffffff;
+        }
+
+        .coffee-button:hover {
+            background-color: #E76F00;
+        }
+
+        .content {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        img.screenshot {
+            width: 30%;
+            margin: 20px 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        img.screenshotoutput {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-counter {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Welcome to Car Data Scraper Tool</h1>
+        <p>This tool is specifically designed for the Carsales website. It allows users to scrape car data efficiently and effortlessly from Carsales. Below are some screenshots of the tool and the output data:</p>
+        <p>For now you can only select, Make,Model,Year and Badge, for a successful output</p>
+
+        <!-- Screenshot of the tool -->
+        <img src="interface.png" alt="Screenshot of the Car Data Scraper Tool" class="screenshot">
+        <figcaption>Interface of Car Data Scraper Tool</figcaption>
+
+        <!-- Screenshot of the output data -->
+        <img src="output.png" alt="Screenshot of the Output Data" class="screenshotoutput">
+        <figcaption>Sample Output Data</figcaption>
+
+        <a href="https://drive.google.com/file/d/1kMVC-K0p4hlK2g-O0iZazpe3q07VRoYU/view?usp=sharing" class="download-button" download>Download Installer Now </a>
+        <a href="https://drive.google.com/file/d/1ppApL0683uIZZmooDeIQ4_FLZV1x4n7j/view?usp=sharing" class="download-button" download>Download Portable Version Now</a>
+        <a href="https://www.buymeacoffee.com/YourCoffeeLink" class="coffee-button" target="_blank">Buy Me a Coffee/Coming soon</a>
+
+        <!-- Download counter -->
+        <div class="download-counter">
+            Downloaded: <span id="downloadCount">0</span> times
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".download-button").addEventListener("click", function(){
+            const counterElem = document.getElementById("downloadCount");
+            let count = parseInt(counterElem.textContent, 10);
+            counterElem.textContent = count + 1;
+        });
+    </script>
+</body>
+
+</html>
